@@ -1,0 +1,63 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+
+.container {
+  width: 300px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.bunny-img {
+  width: 100px;
+  margin-bottom: 20px;
+}
+
+.timer {
+  font-size: 60px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.input-time {
+  width: 100%;
+  padding: 10px;
+  font-size: 18px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn {
+  flex: 1;
+  padding: 15px;
+  border: none;
+  font-size: 16px;
+  color: white;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.green {
+  background-color: #2ecc71;
+}
+
+.blue {
+  background-color: #1abc9c;
+}
+
+.red {
+  background-color: #e74c3c;
+}
+
+.full {
+  width: 100%;
+}
