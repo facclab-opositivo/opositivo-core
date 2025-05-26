@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Informações de Saúde</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="logo">Blood Work</div>
+    <nav>
+      <a href="#">Page</a>
+      <a href="#">Page</a>
+      <a href="#">Page</a>
+      <button>Entrar</button>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Informações de Saúde</h1>
+    <p>(Responda com "Sim" ou "Não")</p>
+
+    <form action="processa.php" method="POST">
+      <div class="question">
+        <label>Está se sentindo bem de saúde hoje?</label><br>
+        <input type="radio" name="saude_bem" value="Sim"> Sim
+        <input type="radio" name="saude_bem" value="Não"> Não
+      </div>
+
+      <div class="question">
+        <label>Dormiu ao menos 6 horas na última noite?</label><br>
+        <input type="radio" name="dormiu" value="Sim"> Sim
+        <input type="radio" name="dormiu" value="Não"> Não
+      </div>
+
+      <div class="question">
+        <label>Está em jejum?</label><br>
+        <input type="radio" name="jejum" value="Sim"> Sim
+        <input type="radio" name="jejum" value="Não"> Não
+      </div>
+
+      <div class="question">
+        <label>Tomou alguma vacina recentemente?</label><br>
+        <input type="radio" name="vacina" value="Sim"> Sim
+        <input type="radio" name="vacina" value="Não"> Não -- Qual? <input type="text" name="qual_vacina">
+      </div>
+
+      <div class="question">
+        <label>Teve febre ou sintomas gripais nos últimos 7 dias?</label><br>
+        <input type="radio" name="febre" value="Sim"> Sim
+        <input type="radio" name="febre" value="Não"> Não
+      </div>
+
+      <div class="question">
+        <label>Fez cirurgia, tatuagem ou piercing nos últimos 12 meses?</label><br>
+        <input type="radio" name="cirurgia" value="Sim"> Sim
+        <input type="radio" name="cirurgia" value="Não"> Não
+      </div>
+
+      <div class="question">
+        <label>Usou algum medicamento nos últimos 7 dias?</label><br>
+        <input type="radio" name="medicamento" value="Sim"> Sim
+        <input type="radio" name="medicamento" value="Não"> Não - Qual? <input type="text" name="qual_medicamento">
+      </div>
+
+      <div class="question">
+        <label>Já teve doenças como hepatite, HIV, sífilis, malária ou Doença de Chagas?</label><br>
+        <input type="radio" name="doencas" value="Sim"> Sim
+        <input type="radio" name="doencas" value="Não"> Não
+      </div>
+
+      <button type="submit">Enviar</button>
+    </form>
+  </main>
+</body>
+</html>
